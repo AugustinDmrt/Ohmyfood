@@ -1,0 +1,22 @@
+/* ---------------------------------------- */
+/* ==       ÉLÉMENTS PRINCIPAUX             */
+/*---------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ---------------------------------------- */
+/* ==               HEADER                  */
+/*---------------------------------------- */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 10px #999;
+}
+
+header img{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
