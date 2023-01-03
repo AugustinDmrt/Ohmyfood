@@ -13,10 +13,45 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 1px 10px #999;
+    box-shadow: 0 10px 10px #999;
 }
 
 header img{
     padding-top: 20px;
     padding-bottom: 10px;
 }
+
+/* ---------------------------------------- */
+/* ==               MAIN                    */
+/*---------------------------------------- */
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------------------------------------- */
+/* ==         SECTION LOCATION             */
+/*---------------------------------------- */
+#location{
+    display: flex;
+    background-color: #f2f2f2;
+}
+
+#location div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#location p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+#location i{
+
+}
+
