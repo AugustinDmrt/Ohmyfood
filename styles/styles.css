@@ -45,7 +45,7 @@ main {
 /*---------------------------------------- */
 #location {
     display: flex;
-    background-color: #f3f3f3;
+    background-color: #EAEAEA;
     box-shadow: 1px 105px 25px -122px rgba(15, 15, 15, 1) inset;
     -webkit-box-shadow: 1px 105px 25px -122px rgba(15, 15, 15, 1) inset;
     -moz-box-shadow: 1px 105px 25px -122px rgba(15, 15, 15, 1) inset;
@@ -65,10 +65,6 @@ main {
     padding-left: 10px;
 }
 
-#location i {
-
-}
-
 /* ---------------------------------------- */
 /* ==         SECTION EXPLORE             */
 /*---------------------------------------- */
@@ -77,14 +73,14 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fafafa;
+    background-color: #F7F7F7;
+    padding: 50px 0;
 }
 
 #explore h2 {
     text-align: center;
     font-size: 1.4em;
     font-weight: bold;
-    padding-top: 40px;
 
 }
 
@@ -92,49 +88,55 @@ main {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
-    color: lightgray;
+    color: #A4A4A4;
     font-size: 1.1em;
 }
 
-#explore div{
-    padding-bottom: 40px;
-}
-
 #explore div button {
-    background-image: linear-gradient(0deg, rgba(147, 86, 220, .9), rgba(255, 121, 218, .9));
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
     border-radius: 25px;
     border: 0;
     padding: 10px 15px;
-    color: white;
+    color: #FBF5FD;
     font-size: 1.1em;
 }
 /* ---------------------------------------- */
 /* ==         SECTION OPERATION             */
 /*---------------------------------------- */
+#operation{
+    margin: 50px 0;
+}
+
 #operation h2{
-    padding-top: 40px;
-    padding-left: 15px;
-    padding-bottom: 20px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+.rulesContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .rules{
     display: flex;
+    width: 70%;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 1.5rem;
-    margin: 1rem 0 1rem 0.75rem;
-    box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
-    border-radius: 1.25rem;
-    background-color: #f6f6f6;
+    justify-content: flex-start;
+    padding: 25px 25px;
+    margin: 12px 0;
+    box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 13%);
+    border-radius: 20px;
+    background-color: #F7F7F7;
     position: relative;
 }
 
 .rules span{
     background-color: #9356DC;
     color: white;
-    height: 24px;
-    width: 24px;
+    height: 30px;
+    width: 30px;
     border-radius: 100px;
     display: flex;
     justify-content: center;
@@ -143,22 +145,32 @@ main {
     left: -12px;
 }
 
-#rulesUsed{
+.rules i{
+    margin: 0 15px;
+    color: grey;
+    font-size: 1.1rem;
+}
+
+#rulesActive{
     background-color: #f5edff;
+}
+
+.rulesIconActive{
+    color: #9356DC !important;
 }
 
 /* ---------------------------------------- */
 /* ==         SECTION RESTAURANT            */
 /*---------------------------------------- */
 #restaurant{
-    background-color: #f6f6f6;
+    background-color: #F7F7F7;
+    padding: 40px 0;
 }
 
 #restaurant h3{
-    padding-top: 40px;
-    padding-left: 30px;
-    padding-bottom: 20px;
+    margin-left: 40px;
     font-size: 1.5em;
+    margin-bottom: 15px;
 }
 
 .cardContainer{
@@ -166,7 +178,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
 }
 
 .card{
@@ -201,21 +213,20 @@ main {
 
 }
 
-.tilteCard{
+.titleCard{
     font-weight: bold;
     padding-bottom: 3px;
 }
 
 /*---------------------------------------- */
-/* ==         SECTION RESTAURANT            */
+/* ==         SECTION FOOTER            == */
 /*---------------------------------------- */
 
 footer{
     background-color: #353535;
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
-    padding-left: 20px;
+    padding: 20px;
 }
 
 footer h2{
@@ -233,6 +244,10 @@ footer li{
 
 footer i{
     color: white;
+}
+
+.padRight{
+    padding-right: 10px;
 }
 
 
