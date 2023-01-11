@@ -25,6 +25,16 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+header .arrowBack{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    color: #353535;
+    font-size: 1.8rem;
+    transform: translateY(-50%);
 }
 
 header img {
@@ -194,6 +204,14 @@ main {
 
 }
 
+.card a{
+    /* background-color: red; */
+    text-decoration: none;
+    height: 100%;
+    color: black;
+
+}
+
 .cardImgContainer{
     width: 100%;
     height: 70%;
@@ -263,4 +281,96 @@ footer i{
 
 
 
+/*------------------------------------------------ */
+/* ==           PAGE MENU RESTAURANT            == */
+/*------------------------------------------------ */
 
+
+/*---------------------------------------- */
+/* ==          SECTION HEADER           == */
+/*---------------------------------------- */
+.headerImg{
+    width: 100%;
+    height: 250px;
+}
+.headerImg img{
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+}
+
+/*---------------------------------------- */
+/* ==          SECTION SECTION          == */
+/*---------------------------------------- */
+.sectionContainer{
+    background-color: #F7F7F7;
+    border-radius: 30px 30px 0 0;
+}
+
+.sectionContainer h1{
+    font-style: italic;
+    margin: 20px 15px 0 15px;
+    font-family: "Shrikhand";
+}
+
+.sectionContainer section h2{
+    font-weight: lighter;
+    margin: 25px 15px 5px 15px;
+    text-transform: uppercase;
+    color: #7C7C7C;
+    font-size: 1rem;
+}
+
+.sectionContainer section hr{
+    width: 45px;
+    margin: 0 15px;
+    margin-bottom: 10px;
+    height: 2px;
+    border: none;
+    background-color: #99E2D0;
+}
+
+.menuCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7F7F7;
+}
+
+.menuCard{
+    margin: 7px 0;
+    width: 90%;
+    height: 70px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.035),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menuCard h3{
+    margin-left: 15px;
+}
+
+.menuCard p{
+    color: #575757;
+    margin-left: 15px;
+}
+
+.orderContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 40px;
+}
+
+.orderContainer #orderButton{
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+    border-radius: 25px;
+    border: 0;
+    padding: 15px 55px;
+    color: #FBF5FD;
+    font-size: 1.1em;
+}
