@@ -22,7 +22,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     img {
         padding-top: 20px;
         padding-bottom: 10px;
@@ -48,14 +48,14 @@ main {
     box-shadow: 1px 105px 25px -122px rgba(15, 15, 15, 1) inset;
     -webkit-box-shadow: 1px 105px 25px -122px rgba(15, 15, 15, 1) inset;
     -moz-box-shadow: 1px 105px 25px -122px rgba(15, 15, 15, 1) inset;
-
+    
     div {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         width: 100%;
-
+        
         p {
             padding-top: 15px;
             padding-bottom: 10px;
@@ -75,13 +75,13 @@ main {
     align-items: center;
     background-color: #F7F7F7;
     padding: 50px 0;
-
+    
     h2 {
         text-align: center;
         font-size: 1.4em;
         font-weight: bold;
     }
-
+    
     p{
         padding-top: 20px;
         padding-bottom: 20px;
@@ -89,7 +89,7 @@ main {
         color: #A4A4A4;
         font-size: 1.1em;
     }
-
+    
     div {
         button {
             background-image: linear-gradient(0deg, rgba(147, 86, 220, .9), rgba(255, 121, 218, .9));
@@ -107,17 +107,17 @@ main {
 /*---------------------------------------- */
 #operation{
     margin: 50px 0;
-
+    
     h2{
         margin-bottom: 10px;
         margin-left: 25px;
     }
-
+    
     .rulesContainer{
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        
         .rules{
             display: flex;
             width: 70%;
@@ -130,7 +130,7 @@ main {
             border-radius: 20px;
             background-color: #F7F7F7;
             position: relative;
-
+            
             span{
                 background-color: #9356DC;
                 color: white;
@@ -143,17 +143,17 @@ main {
                 position: absolute;
                 left: -12px;
             }
-
+            
             i{
                 margin: 0 15px;
                 color: grey;
                 font-size: 1.1rem;
             }
-
+            
             &#rulesActive{
                 background-color: #f5edff;
             }
-
+            
             &.rulesIconActive{
                 color: #9356DC !important;
             }
@@ -167,19 +167,19 @@ main {
 #restaurant{
     background-color: #F7F7F7;
     padding: 40px 0;
-
+    
     h3{
         margin-left: 40px;
         font-size: 1.5em;
         margin-bottom: 15px;
     }
-
+    
     .cardContainer{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-
+        
         .card{
             height: 250px;
             width: 80%;
@@ -190,19 +190,19 @@ main {
             display: flex;
             flex-direction: column;
             margin-bottom: 20px;
-
+            
             .cardImgContainer{
                 width: 100%;
                 height: 70%;
                 position: relative;
-
+                
                 img{
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                     border-radius: 15px 15px 0 0;
                 }
-
+                
                 .newLabel{
                     position: absolute;
                     background-color: #99E2D0;
@@ -213,12 +213,12 @@ main {
                     padding: 5px 10px;
                 }
             }
-
+            
             .cardBottom{
                 padding-top: 10px;
                 padding-left: 10px;
                 height: 30%;
-
+                
                 .titleCard{
                     font-weight: bold;
                     padding-bottom: 3px;
@@ -236,27 +236,107 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 20px;
-
+    
     h2{
         color: white;
         font-family: "Shrikhand", cursive;
     }
-
+    
     ul{
         padding-top: 10px;
         padding-bottom: 15px;
-
+        
         li{
             padding-top: 7px;
             color: white;
         }
     }
-
+    
     i{
         color: white;
     }
-
+    
     .padRight{
         padding-right: 10px;
+    }
+}
+
+
+// == SECTION HEADER ==
+.headerImg {
+    width: 100%;
+    height: 250px;
+    img {
+        width: 100%;
+        height: 120%;
+        object-fit: cover;
+    }
+}
+
+// == SECTION SECTION ==
+.sectionContainer {
+    background-color: #F7F7F7;
+    border-radius: 30px 30px 0 0;
+    h1 {
+        font-style: italic;
+        margin: 20px 15px 0 15px;
+        font-family: "Shrikhand";
+    }
+    section {
+        h2 {
+            font-weight: lighter;
+            margin: 25px 15px 5px 15px;
+            text-transform: uppercase;
+            color: #7C7C7C;
+            font-size: 1rem;
+        }
+        hr {
+            width: 45px;
+            margin: 0 15px;
+            margin-bottom: 10px;
+            height: 2px;
+            border: none;
+            background-color: #99E2D0;
+        }
+    }
+}
+
+.menuCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7F7F7;
+    .menuCard {
+        margin: 7px 0;
+        width: 90%;
+        height: 70px;
+        border-radius: 15px;
+        background-color: #FFFFFF;
+        box-shadow: 0 10px 5px rgba(0, 0, 0, 0.035), 100px 100px 80px rgba(0, 0, 0, 0.07);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h3 {
+            margin-left: 15px;
+        }
+        p {
+            color: #575757;
+            margin-left: 15px;
+        }
+    }
+}
+
+.orderContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 40px;
+    #orderButton {
+        background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+        border-radius: 25px;
+        border: 0;
+        padding: 15px 55px;
+        color: #FBF5FD;
+        font-size: 1.1em;
     }
 }
