@@ -19,14 +19,22 @@ li{
 /*---------------------------------------- */
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    img {
-        padding-top: 20px;
-        padding-bottom: 10px;
-    }
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	.arrowBack {
+		position: absolute;
+		top: 50%;
+		left: 30px;
+		color: #353535;
+		font-size: 1.8rem;
+		transform: translateY(-50%);
+	}
+	img {
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
 }
 
 /* ---------------------------------------- */
