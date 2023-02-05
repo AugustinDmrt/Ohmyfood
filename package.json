@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./styles/styles.scss:./styles/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AugustinDmrt/ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AugustinDmrt/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/AugustinDmrt/ohmyfood#readme"
+}
