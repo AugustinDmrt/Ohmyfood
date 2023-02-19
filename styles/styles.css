@@ -572,5 +572,53 @@ footer .padRight {
     transform-origin: 0%;
   }
 }
+/*---------------------------------------- */
+/* ==         SECTION MEDIA            == */
+/*---------------------------------------- */
+@media screen and (min-width: 768px) {
+  #operation {
+    display: flex;
+    flex-direction: column;
+  }
+  #operation h2 {
+    margin: 5px auto;
+  }
+}
+#restaurant {
+  display: flex;
+  flex-direction: column;
+}
+#restaurant h3 {
+  margin: 5px auto;
+}
+#restaurant .cardContainer #cards {
+  height: 0;
+}
+#restaurant .cardContainer .card {
+  height: 275px;
+}
+#restaurant .cardContainer .card a .cardImgContainer {
+  height: 200px;
+}
+
+@media screen and (min-width: 1224px) {
+  #restaurant h3 {
+    margin-bottom: 40px;
+  }
+  #restaurant .cardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #restaurant .cardContainer .card {
+    width: 45%;
+    transition: 0.4s;
+  }
+  #restaurant .cardContainer .card:hover {
+    transform: scale(1.05);
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
