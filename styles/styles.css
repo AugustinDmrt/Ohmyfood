@@ -258,6 +258,9 @@ main {
   align-items: center;
   justify-content: space-between;
 }
+#restaurant .cardContainer #cards {
+  height: 275px !important;
+}
 #restaurant .cardContainer .card {
   height: 250px;
   width: 80%;
@@ -268,18 +271,21 @@ main {
   flex-direction: column;
   margin-bottom: 20px;
 }
-#restaurant .cardContainer .card .cardImgContainer {
+#restaurant .cardContainer .card a {
+  color: #000;
+}
+#restaurant .cardContainer .card a .cardImgContainer {
   width: 100%;
   height: 70%;
   position: relative;
 }
-#restaurant .cardContainer .card .cardImgContainer img {
+#restaurant .cardContainer .card a .cardImgContainer img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
-#restaurant .cardContainer .card .cardImgContainer .newLabel {
+#restaurant .cardContainer .card a .cardImgContainer .newLabel {
   position: absolute;
   background-color: #99E2D0;
   color: #088C6C;
@@ -288,27 +294,66 @@ main {
   border-radius: 4px;
   padding: 5px 10px;
 }
-#restaurant .cardContainer .card .cardBottom {
+#restaurant .cardContainer .card a .cardBottom {
   padding-top: 10px;
   padding-left: 10px;
   height: 30%;
+  display: flex;
+  justify-content: space-between;
 }
-#restaurant .cardContainer .card .cardBottom .titleCard {
+#restaurant .cardContainer .card a .cardBottom .titleCard {
   font-weight: bold;
   padding-bottom: 3px;
 }
-#restaurant .cardContainer .card .cardBottom .card_btn {
-  height: 2rem;
-  width: 2rem;
+#restaurant .cardContainer .card a .cardBottom .card_btn {
+  height: 32px;
+  width: 5px;
   background-color: transparent;
-  border: transparent 0px solid;
+  border: transparent 0 solid;
   padding: 0;
 }
-#restaurant .cardContainer .card .cardBottom .card_like {
-  background-color: white !important;
+#restaurant .cardContainer .card a .cardBottom .footer_btn {
+  height: 2rem;
+  width: 2rem;
+  border: transparent 0px solid;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background-color: black;
+  margin: 0 15px 0 15px;
 }
-#restaurant .cardContainer a {
-  color: #000;
+#restaurant .cardContainer .card a .cardBottom .footer_btn::before {
+  opacity: 0;
+  transition: 250ms;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+}
+#restaurant .cardContainer .card a .cardBottom .footer_btn:hover::before {
+  opacity: 1;
+}
+#restaurant .cardContainer .card a .cardBottom .footer_btn:hover .footer_like-noBg {
+  opacity: 0;
+}
+#restaurant .cardContainer .card a .cardBottom .footer_btn .card_like {
+  transition-duration: 0.25s;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten;
 }
 
 /*---------------------------------------- */
@@ -331,6 +376,10 @@ footer ul {
 footer ul li {
   padding-top: 7px;
   color: white;
+}
+footer ul a {
+  text-decoration: none;
+  color: #fff;
 }
 footer i {
   color: white;
