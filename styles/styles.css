@@ -108,6 +108,8 @@ header {
   justify-content: center;
   align-items: center;
   position: relative;
+  max-width: 1400px;
+  min-width: 374px;
 }
 header .arrowBack {
   position: absolute;
@@ -128,6 +130,8 @@ header img {
 main {
   display: flex;
   flex-direction: column;
+  max-width: 1400px;
+  min-width: 374px;
 }
 
 /* ---------------------------------------- */
@@ -364,6 +368,8 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  max-width: 1400px;
+  min-width: 374px;
 }
 footer h2 {
   color: white;

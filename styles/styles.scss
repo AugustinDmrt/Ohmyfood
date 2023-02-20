@@ -19,6 +19,7 @@ a {
   text-decoration: none;
 }
 
+
 /* ---------------------------------------- */
 /* ==       ANIMATIONS                      */
 /*---------------------------------------- */
@@ -117,6 +118,8 @@ header {
   justify-content: center;
   align-items: center;
   position: relative;
+  max-width: 1400px;
+  min-width: 374px;
 
   .arrowBack {
     position: absolute;
@@ -140,6 +143,8 @@ header {
 main {
   display: flex;
   flex-direction: column;
+  max-width: 1400px;
+  min-width: 374px;
 }
 
 /* ---------------------------------------- */
@@ -412,6 +417,8 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  max-width: 1400px;
+  min-width: 374px;
 
   h2 {
     color: white;
