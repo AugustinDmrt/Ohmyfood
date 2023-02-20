@@ -187,7 +187,7 @@ main {
   background-color: #F7F7F7;
   padding: 50px 0;
 
-  h2 {
+  h1 {
     text-align: center;
     font-size: 1.4em;
     font-weight: bold;
@@ -209,6 +209,12 @@ main {
       padding: 10px 15px;
       color: #FBF5FD;
       font-size: 1.1em;
+      cursor: pointer;
+      &:hover{
+        background-image: linear-gradient(0deg, rgba(167, 106, 240, .9), rgba(255, 141, 238, .9));
+        box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 13%);
+
+      }
     }
   }
 }
@@ -286,7 +292,7 @@ main {
   background-color: #F7F7F7;
   padding: 40px 0;
 
-  h3 {
+  h2 {
     //margin-left: 40px;
     font-size: 1.5em;
     //margin-bottom: 15px;
@@ -575,20 +581,24 @@ footer {
     opacity: 0%;
 
     .menuItem_header {
-      //white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
       flex: 1;
+      padding-top: 7px;
 
       h3 {
         margin-left: 15px;
         text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
       }
 
       p {
         color: #575757;
         margin-left: 15px;
         text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
       }
     }
 
@@ -652,6 +662,11 @@ footer {
     padding: 15px 55px;
     color: #FBF5FD;
     font-size: 1.1em;
+    cursor: pointer;
+    &:hover{
+      background-image: linear-gradient(0deg, rgba(167, 106, 240, .9), rgba(255, 141, 238, .9));
+      box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 13%);
+    }
   }
 }
 
@@ -682,7 +697,7 @@ footer {
   #restaurant{
     display: flex;
     flex-direction: column;
-    h3{
+    h2{
       margin: 5px auto;
     }
     .cardContainer{
@@ -704,7 +719,7 @@ footer {
 
 @media screen and (min-width: 1224px) {
   #restaurant {
-    h3{
+    h2{
       margin-bottom: 40px;
     }
     .cardContainer {

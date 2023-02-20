@@ -166,7 +166,7 @@ main {
   background-color: #F7F7F7;
   padding: 50px 0;
 }
-#explore h2 {
+#explore h1 {
   text-align: center;
   font-size: 1.4em;
   font-weight: bold;
@@ -185,6 +185,11 @@ main {
   padding: 10px 15px;
   color: #FBF5FD;
   font-size: 1.1em;
+  cursor: pointer;
+}
+#explore div button:hover {
+  background-image: linear-gradient(0deg, rgba(167, 106, 240, 0.9), rgba(255, 141, 238, 0.9));
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
 }
 
 /* ---------------------------------------- */
@@ -249,7 +254,7 @@ main {
   background-color: #F7F7F7;
   padding: 40px 0;
 }
-#restaurant h3 {
+#restaurant h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
   margin-left: 25px;
@@ -502,15 +507,20 @@ footer .padRight {
   text-overflow: ellipsis;
   overflow: hidden;
   flex: 1;
+  padding-top: 7px;
 }
 .menuCards .menuCard .menuItem_header h3 {
   margin-left: 15px;
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menuCards .menuCard .menuItem_header p {
   color: #575757;
   margin-left: 15px;
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menuCards .menuCard .menuItem_price {
   font-weight: bold;
@@ -561,6 +571,11 @@ footer .padRight {
   padding: 15px 55px;
   color: #FBF5FD;
   font-size: 1.1em;
+  cursor: pointer;
+}
+.orderContainer #orderButton:hover {
+  background-image: linear-gradient(0deg, rgba(167, 106, 240, 0.9), rgba(255, 141, 238, 0.9));
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
 }
 
 @keyframes itemMenuAppear {
@@ -590,7 +605,7 @@ footer .padRight {
     display: flex;
     flex-direction: column;
   }
-  #restaurant h3 {
+  #restaurant h2 {
     margin: 5px auto;
   }
   #restaurant .cardContainer #cards {
@@ -604,7 +619,7 @@ footer .padRight {
   }
 }
 @media screen and (min-width: 1224px) {
-  #restaurant h3 {
+  #restaurant h2 {
     margin-bottom: 40px;
   }
   #restaurant .cardContainer {
